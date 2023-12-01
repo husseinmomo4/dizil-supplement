@@ -102,10 +102,10 @@ const CatagoriPadg = ({ route }) => {
                         {item.price}
                       </Text>
                     </View>
-                    <Text style={{ color: 'black', marginLeft: 9 }}>
-                      {addedToCart[item.id]?.added ? 'Added Success' : 'Add To Cart'}
+                    <Text numberOfLines={1} ellipsizeMode="tail" style={{ color: 'black', marginLeft: 13, bottom:2, fontWeight:"700" }}>
+                      {addedToCart[item.id]?.added ? 'Added Succes' : 'Add To Cart'}
                     </Text>
-                    <View style={{ marginRight: 102, bottom: 21 }}>
+                    <View style={{ marginRight: 102, bottom: 23 }}>
                       <MaterialCommunityIcons
                         name={addedToCart[item.id]?.added ? 'cart-arrow-down' : 'cart-outline'}
                         size={24}
